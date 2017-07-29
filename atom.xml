@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://watasi.cn/"/>
-  <updated>2017-07-29T06:37:19.456Z</updated>
+  <updated>2017-07-29T06:38:41.426Z</updated>
   <id>http://watasi.cn/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>mui监测IOS版本更新</title>
+    <title>iis7托管nodejis应用程序</title>
     <link href="http://watasi.cn/2017/07/29/iis7%E6%89%98%E7%AE%A1nodejis%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F/"/>
     <id>http://watasi.cn/2017/07/29/iis7托管nodejis应用程序/</id>
     <published>2017-07-29T06:36:22.229Z</published>
-    <updated>2017-07-29T06:37:19.456Z</updated>
+    <updated>2017-07-29T06:38:41.426Z</updated>
     
     <content type="html"><![CDATA[<h1 id="1-参考资料"><a href="#1-参考资料" class="headerlink" title="1. 参考资料"></a>1. 参考资料</h1><p><a href="http://www.jb51.net/article/61569.htm" target="_blank" rel="external">http://www.jb51.net/article/61569.htm</a> <a href="http://www.cnblogs.com/chenweixuan/p/5489343.html" target="_blank" rel="external">http://www.cnblogs.com/chenweixuan/p/5489343.html</a></p>
 <h1 id="2-开始"><a href="#2-开始" class="headerlink" title="2. 开始"></a>2. 开始</h1><p><a href="https://nodejs.org/en/download/" target="_blank" rel="external">NodeJs</a> <a href="https://www.iis.net/downloads/microsoft/url-rewrite" target="_blank" rel="external">URL Rewrite</a> <a href="https://github.com/tjanczuk/iisnode" target="_blank" rel="external">iisnode</a> <a href="https://github.com/azure/iisnode/releases/download/v0.2.21/iisnode-full-v0.2.21-x86.msi" target="_blank" rel="external">iisnode x86下载</a> <a href="https://github.com/azure/iisnode/releases/download/v0.2.21/iisnode-full-v0.2.21-x64.msi" target="_blank" rel="external">iisnode x64下载</a></p>

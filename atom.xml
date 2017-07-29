@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://watasi.cn/"/>
-  <updated>2017-07-29T02:55:12.404Z</updated>
+  <updated>2017-07-29T05:59:24.499Z</updated>
   <id>http://watasi.cn/</id>
   
   <author>
@@ -16,29 +16,48 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://watasi.cn/2017/07/29/hello-world/"/>
-    <id>http://watasi.cn/2017/07/29/hello-world/</id>
-    <published>2017-07-29T02:55:12.404Z</published>
-    <updated>2017-07-29T02:55:12.404Z</updated>
+    <title>mui监测IOS版本更新</title>
+    <link href="http://watasi.cn/2017/07/29/mui%E7%9B%91%E6%B5%8BIOS%E7%89%88%E6%9C%AC%E6%9B%B4%E6%96%B0/"/>
+    <id>http://watasi.cn/2017/07/29/mui监测IOS版本更新/</id>
+    <published>2017-07-29T05:57:23.316Z</published>
+    <updated>2017-07-29T05:59:24.499Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+    <content type="html"><![CDATA[<p>使用<code>mui</code>开发混合app，上架app stroe后，监测app store是否有更新，并提示用户跳转app store更新应用。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> ver;    <span class="comment">// 用于保存当前应用版本</span></div><div class="line"></div><div class="line">mui.plusReady(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;         </div><div class="line">     plus.runtime.getProperty(plus.runtime.appid, <span class="function"><span class="keyword">function</span>(<span class="params">inf</span>) </span>&#123;</div><div class="line">         ver = inf.version;        <span class="comment">// 当前应用版本</span></div><div class="line">         <span class="keyword">var</span> ua = navigator.userAgent.toLowerCase();</div><div class="line">         <span class="keyword">if</span>(<span class="regexp">/iphone|ipad|ipod/</span>.test(ua)) &#123;    <span class="comment">// iphone</span></div><div class="line">             mui.ajax(&#123;</div><div class="line">                 url: <span class="string">'http://itunes.apple.com/lookup?id=1166765111'</span>,</div><div class="line">                 type: <span class="string">"GET"</span>,</div><div class="line">                 dataType: <span class="string">"json"</span>,</div><div class="line">                 data: &#123;</div><div class="line">                     id: <span class="number">1166765111</span></div><div class="line">                 &#125;,</div><div class="line">                 contentType:<span class="string">'application/x-www-form-urlencoded;charset=UTF-8'</span>,</div><div class="line">                 success: <span class="function"><span class="keyword">function</span>(<span class="params">res</span>)</span>&#123;</div><div class="line">                     <span class="comment">//console.log(JSON.stringify(res));</span></div><div class="line">                     <span class="keyword">var</span> version = res.results[<span class="number">0</span>].version;</div><div class="line">                     <span class="keyword">if</span>(version &gt; ver) &#123;</div><div class="line">                         mui.alert(res.results[<span class="number">0</span>].releaseNotes, <span class="string">"版本更新"</span>, <span class="string">"确定"</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">                             <span class="keyword">var</span> url = <span class="string">'itms-apps://itunes.apple.com/us/app/id1166765111'</span>;</div><div class="line">                             plus.runtime.openURL(url);</div><div class="line">                         &#125;)</div><div class="line">                     &#125;</div><div class="line">                 &#125;</div><div class="line">             &#125;)</div><div class="line">         &#125;</div><div class="line">    &#125;);</div><div class="line"></div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      &lt;p&gt;使用&lt;code&gt;mui&lt;/code&gt;开发混合app，上架app stroe后，监测app store是否有更新，并提示用户跳转app store更新应用。&lt;br&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td clas
     
     </summary>
     
+    
+      <category term="mui" scheme="http://watasi.cn/tags/mui/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Nodejs使用request以流的形式转发图片</title>
+    <link href="http://watasi.cn/2017/07/29/Nodejs%E4%BD%BF%E7%94%A8request%E4%BB%A5%E6%B5%81%E7%9A%84%E5%BD%A2%E5%BC%8F%E8%BD%AC%E5%8F%91%E5%9B%BE%E7%89%87/"/>
+    <id>http://watasi.cn/2017/07/29/Nodejs使用request以流的形式转发图片/</id>
+    <published>2017-07-29T02:55:12.404Z</published>
+    <updated>2017-07-29T05:51:26.283Z</updated>
+    
+    <content type="html"><![CDATA[<p>做项目的时候，需要用Nodejs做代理转发，服务器那边要求图片以<code>流</code>的方式上传，这里记录一下Nodejs以<code>流</code>的形式读取本地图片并上传。</p>
+<h2 id="1-安装依赖"><a href="#1-安装依赖" class="headerlink" title="1. 安装依赖"></a>1. 安装依赖</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install request md5</div></pre></td></tr></table></figure>
+<h2 id="2-需要模块"><a href="#2-需要模块" class="headerlink" title="2. 需要模块"></a>2. 需要模块</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> fs = <span class="built_in">require</span>(<span class="string">"fs"</span>);</div><div class="line"><span class="keyword">const</span> path = <span class="built_in">require</span>(<span class="string">"path"</span>);</div><div class="line"><span class="keyword">const</span> request = <span class="built_in">require</span>(<span class="string">"request"</span>);</div><div class="line"><span class="keyword">const</span> md5 = <span class="built_in">require</span>(<span class="string">"md5"</span>);</div></pre></td></tr></table></figure>
+<h2 id="3-具体操作"><a href="#3-具体操作" class="headerlink" title="3. 具体操作"></a>3. 具体操作</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 获取前台穿过来到图片base64信息</span></div><div class="line"><span class="keyword">let</span> img = req.body.img;</div><div class="line"></div><div class="line"><span class="comment">// 去掉base64头部</span></div><div class="line"><span class="keyword">let</span> base64Data = img.replace(<span class="regexp">/^data:image\/\w+;base64,/</span>, <span class="string">""</span>);</div><div class="line"></div><div class="line"><span class="comment">// 转换成二进制</span></div><div class="line"><span class="keyword">let</span> buffer = <span class="keyword">new</span> Buffer(base64Data, <span class="string">"base64"</span>);</div><div class="line"></div><div class="line"><span class="comment">// 生成图片md5值</span></div><div class="line"><span class="keyword">let</span> md5Data = md5(buffer);</div><div class="line"></div><div class="line"><span class="comment">// 保存图片</span></div><div class="line">fs.writeFile(path.join(__dirname+<span class="string">"/../uploads"</span>, <span class="string">`<span class="subst">$&#123;md5Data&#125;</span>.jpg`</span>), buffer, (err) =&gt; &#123;</div><div class="line">	<span class="keyword">if</span>(err) &#123;</div><div class="line">		<span class="built_in">console</span>.log(err);</div><div class="line">		<span class="keyword">return</span>;</div><div class="line">   &#125;</div><div class="line"></div><div class="line">   <span class="comment">// 读取图片</span></div><div class="line">   fs.createReadStream(path.join(__dirname+<span class="string">`/../uploads/<span class="subst">$&#123;md5Data&#125;</span>.jpg`</span>)).pipe(request(&#123;</div><div class="line">		url: url,</div><div class="line">      method: <span class="string">"POST"</span>,</div><div class="line">      headers: &#123; <span class="string">"Content-Type"</span>: <span class="string">"application/json"</span> &#125;</div><div class="line">      ...</div><div class="line">   &#125;, (error, response, body) =&gt; &#123;</div><div class="line">		<span class="built_in">console</span>.log(body);</div><div class="line">   &#125;));</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;做项目的时候，需要用Nodejs做代理转发，服务器那边要求图片以&lt;code&gt;流&lt;/code&gt;的方式上传，这里记录一下Nodejs以&lt;code&gt;流&lt;/code&gt;的形式读取本地图片并上传。&lt;/p&gt;
+&lt;h2 id=&quot;1-安装依赖&quot;&gt;&lt;a href=&quot;#1-安装依赖&quot; class=
+    
+    </summary>
+    
+    
+      <category term="nodejs" scheme="http://watasi.cn/tags/nodejs/"/>
     
   </entry>
   

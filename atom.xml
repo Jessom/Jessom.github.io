@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://watasi.cn/"/>
-  <updated>2017-07-29T06:38:41.426Z</updated>
+  <updated>2017-07-29T06:43:20.009Z</updated>
   <id>http://watasi.cn/</id>
   
   <author>
@@ -20,10 +20,10 @@
     <link href="http://watasi.cn/2017/07/29/iis7%E6%89%98%E7%AE%A1nodejis%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F/"/>
     <id>http://watasi.cn/2017/07/29/iis7托管nodejis应用程序/</id>
     <published>2017-07-29T06:36:22.229Z</published>
-    <updated>2017-07-29T06:38:41.426Z</updated>
+    <updated>2017-07-29T06:43:20.009Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="1-参考资料"><a href="#1-参考资料" class="headerlink" title="1. 参考资料"></a>1. 参考资料</h1><p><a href="http://www.jb51.net/article/61569.htm" target="_blank" rel="external">http://www.jb51.net/article/61569.htm</a> <a href="http://www.cnblogs.com/chenweixuan/p/5489343.html" target="_blank" rel="external">http://www.cnblogs.com/chenweixuan/p/5489343.html</a></p>
-<h1 id="2-开始"><a href="#2-开始" class="headerlink" title="2. 开始"></a>2. 开始</h1><p><a href="https://nodejs.org/en/download/" target="_blank" rel="external">NodeJs</a> <a href="https://www.iis.net/downloads/microsoft/url-rewrite" target="_blank" rel="external">URL Rewrite</a> <a href="https://github.com/tjanczuk/iisnode" target="_blank" rel="external">iisnode</a> <a href="https://github.com/azure/iisnode/releases/download/v0.2.21/iisnode-full-v0.2.21-x86.msi" target="_blank" rel="external">iisnode x86下载</a> <a href="https://github.com/azure/iisnode/releases/download/v0.2.21/iisnode-full-v0.2.21-x64.msi" target="_blank" rel="external">iisnode x64下载</a></p>
+    <content type="html"><![CDATA[<h1 id="1-参考资料"><a href="#1-参考资料" class="headerlink" title="1. 参考资料"></a>1. 参考资料</h1><p><a href="http://www.jb51.net/article/61569.htm" target="_blank" rel="external">http://www.jb51.net/article/61569.htm</a><br><a href="http://www.cnblogs.com/chenweixuan/p/5489343.html" target="_blank" rel="external">http://www.cnblogs.com/chenweixuan/p/5489343.html</a></p>
+<h1 id="2-开始"><a href="#2-开始" class="headerlink" title="2. 开始"></a>2. 开始</h1><p><a href="https://nodejs.org/en/download/" target="_blank" rel="external">NodeJs</a><br><a href="https://www.iis.net/downloads/microsoft/url-rewrite" target="_blank" rel="external">URL Rewrite</a> <a href="https://github.com/tjanczuk/iisnode" target="_blank" rel="external">iisnode</a><br><a href="https://github.com/azure/iisnode/releases/download/v0.2.21/iisnode-full-v0.2.21-x86.msi" target="_blank" rel="external">iisnode x86下载</a><br><a href="https://github.com/azure/iisnode/releases/download/v0.2.21/iisnode-full-v0.2.21-x64.msi" target="_blank" rel="external">iisnode x64下载</a></p>
 <p>安装完成后，在IIS中创建站点，指向nodejs应用程序目录(这里以express项目为例)，<code>在nodejs应用程序中添加web.config文件</code>：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">&lt;configuration&gt;</div><div class="line">    &lt;system.webServer&gt;</div><div class="line">        &lt;handlers&gt;</div><div class="line">            &lt;add name=&quot;iisnode&quot; path=&quot;start.js&quot; verb=&quot;*&quot; modules=&quot;iisnode&quot; resourceType=&quot;Unspecified&quot; requireAccess=&quot;Script&quot; /&gt;</div><div class="line">        &lt;/handlers&gt;</div><div class="line">        &lt;rewrite&gt;</div><div class="line">            &lt;rules&gt;</div><div class="line">                &lt;rule name=&quot;all&quot;&gt;</div><div class="line">                    &lt;match url=&quot;/*&quot; /&gt;</div><div class="line">                    &lt;action type=&quot;Rewrite&quot; url=&quot;start.js&quot; /&gt;</div><div class="line">                &lt;/rule&gt;</div><div class="line">            &lt;/rules&gt;</div><div class="line">        &lt;/rewrite&gt;</div><div class="line">    &lt;/system.webServer&gt;</div><div class="line">&lt;/configuration&gt;</div></pre></td></tr></table></figure>
 <p><strong>注意：</strong></p>

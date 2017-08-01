@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://watasi.cn/"/>
-  <updated>2017-07-31T00:43:13.541Z</updated>
+  <updated>2017-08-01T00:52:17.451Z</updated>
   <id>http://watasi.cn/</id>
   
   <author>
@@ -14,6 +14,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>基于MUI开发的一套模板</title>
+    <link href="http://watasi.cn/2017/08/01/%E5%9F%BA%E4%BA%8EMUI%E5%BC%80%E5%8F%91%E7%9A%84%E4%B8%80%E5%A5%97%E6%A8%A1%E6%9D%BF/"/>
+    <id>http://watasi.cn/2017/08/01/基于MUI开发的一套模板/</id>
+    <published>2017-08-01T00:28:18.781Z</published>
+    <updated>2017-08-01T00:52:17.451Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>公司准备用MUI框架，开发一套模板，方便于未来进行二次、三次开发。本人本着绝对服从领导指示的原则，参与了模板的开发，这里把项目开源一下。<br>该项目目前功能不是很完善(至少提交App Store被批为<code>无用的爱啪啪</code>)，后续会添加更多的功能。<br><a href="https://github.com/Jessom/MUI" target="_blank" rel="external">戳这里</a>查看项目源码。</p>
+<h2 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">|-default                 页面资源</div><div class="line">  |-css                   样式表</div><div class="line">    |-css                 sass编译后的css</div><div class="line">    |-sass                sass源码</div><div class="line">  |-iconfont              字体图标</div><div class="line">  |-images                图片资源</div><div class="line">  |-js                    页面js文件</div><div class="line">|-Public                  公共资源</div><div class="line">  |-css                   公共css</div><div class="line">  |-images                公共图片资源</div><div class="line">  |-js                    公共js文件</div><div class="line">  |-plugins               插件</div><div class="line">|-.project                HBuilder编辑器生成文件</div><div class="line">|-manifest.json           app配置文件</div><div class="line">|-abotut.html             关于我们</div><div class="line">|-detail.html             详情</div><div class="line">|-editor.html             编辑</div><div class="line">|-forget_password.html    找回密码</div><div class="line">|-home.html               主页</div><div class="line">|-index.html              入口</div><div class="line">|-login.html              登录</div><div class="line">|-personal.html           个人</div><div class="line">|-preview.html            预览</div><div class="line">|-publish.html            发布选项</div><div class="line">|-reg.html                注册</div><div class="line">|-release.html            发布</div><div class="line">|-setting.html            设置</div><div class="line">|-userinfo.html           个人信息</div></pre></td></tr></table></figure>
+<h2 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h2><ol>
+<li>主要用到的就是MUI</li>
+<li>数据渲染的部分使用了vue1.0.28</li>
+</ol>
+<h2 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h2><p>[x] 注册<br>[x] 登录<br>[x] 发布文章<br>[x] 浏览文章</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;项目介绍&quot;&gt;&lt;a href=&quot;#项目介绍&quot; class=&quot;headerlink&quot; title=&quot;项目介绍&quot;&gt;&lt;/a&gt;项目介绍&lt;/h2&gt;&lt;p&gt;公司准备用MUI框架，开发一套模板，方便于未来进行二次、三次开发。本人本着绝对服从领导指示的原则，参与了模板的开发，这里把项
+    
+    </summary>
+    
+      <category term="mui" scheme="http://watasi.cn/categories/mui/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>iis7托管nodejs应用程序</title>

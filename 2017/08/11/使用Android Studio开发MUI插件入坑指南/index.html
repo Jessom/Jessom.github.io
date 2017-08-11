@@ -1,28 +1,183 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title>わタしの ブログ</title>
-  <subtitle>watasi的博客</subtitle>
-  <link href="/atom.xml" rel="self"/>
-  
-  <link href="http://watasi.cn/"/>
-  <updated>2017-08-11T10:15:08.000Z</updated>
-  <id>http://watasi.cn/</id>
-  
-  <author>
-    <name>わタし</name>
+<!DOCTYPE html>
+<html>
+<head>
     
-  </author>
-  
-  <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title></title>
-    <link href="http://watasi.cn/2017/08/11/%E4%BD%BF%E7%94%A8Android%20Studio%E5%BC%80%E5%8F%91MUI%E6%8F%92%E4%BB%B6%E5%85%A5%E5%9D%91%E6%8C%87%E5%8D%97/"/>
-    <id>http://watasi.cn/2017/08/11/使用Android Studio开发MUI插件入坑指南/</id>
-    <published>2017-08-11T10:15:43.597Z</published>
-    <updated>2017-08-11T10:15:08.000Z</updated>
+
     
-    <content type="html"><![CDATA[<h2 id="使用Android-Studio开发MUI插件入坑指南"><a href="#使用Android-Studio开发MUI插件入坑指南" class="headerlink" title="使用Android Studio开发MUI插件入坑指南"></a>使用Android Studio开发MUI插件入坑指南</h2><p>[TOC]</p>
+
+    
+
+
+
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="">
+    
+    
+    
+    <title>No title | わタしの ブログ | watasi的博客</title>
+    <meta itemprop="name" content="わタしの ブログ">
+    <meta itemprop="image" content="">
+    <meta itemprop="description" content="watasi的个人博客，专注于分享技术">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#393A3F">
+    
+    
+    <meta name="keywords" content="">
+    <meta name="description" content="使用Android Studio开发MUI插件入坑指南[TOC] 写在前面，该入坑指南是以Mob发送短信验证码为例，实现MUI第三方插件的开发，仅供参考。                                                                                              123               HTML5+ 基座扩展">
+<meta property="og:type" content="article">
+<meta property="og:title" content="No title">
+<meta property="og:url" content="http://watasi.cn/2017/08/11/使用Android Studio开发MUI插件入坑指南/index.html">
+<meta property="og:site_name" content="わタしの ブログ">
+<meta property="og:description" content="使用Android Studio开发MUI插件入坑指南[TOC] 写在前面，该入坑指南是以Mob发送短信验证码为例，实现MUI第三方插件的开发，仅供参考。                                                                                              123               HTML5+ 基座扩展">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://img-cdn-qiniu.dcloud.net.cn/uploads/article/20141017/6e2bd27ff777bed57750a5b3b6143a0f.png">
+<meta property="og:updated_time" content="2017-08-11T10:15:08.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="No title">
+<meta name="twitter:description" content="使用Android Studio开发MUI插件入坑指南[TOC] 写在前面，该入坑指南是以Mob发送短信验证码为例，实现MUI第三方插件的开发，仅供参考。                                                                                              123               HTML5+ 基座扩展">
+<meta name="twitter:image" content="http://img-cdn-qiniu.dcloud.net.cn/uploads/article/20141017/6e2bd27ff777bed57750a5b3b6143a0f.png">
+    
+        <link rel="alternate" type="application/atom+xml" title="わタしの ブログ" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <div id="wx_pic" style="margin: 0 auto;display:none;">
+      <img src="" alt="">
+    </div>
+    <link rel="stylesheet" href="/css/style.css?v=1.6.11">
+    <script>window.lazyScripts=[]</script>
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">わタし</h5>
+          <a href="mailto:jessoncheung@gmail.com" title="jessoncheung@gmail.com" class="mail">jessoncheung@gmail.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                项目
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/Jessom/" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis"></div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title"></h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-08-11T10:15:43.597Z" itemprop="datePublished" class="page-time">
+  2017-08-11
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#使用Android-Studio开发MUI插件入坑指南"><span class="post-toc-number">1.</span> <span class="post-toc-text">使用Android Studio开发MUI插件入坑指南</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-预备环境"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">1. 预备环境</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1-1-离线SDK目录结构"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">1.1 离线SDK目录结构</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-配置编译工程"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">2. 配置编译工程</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2-1-导入jar包"><span class="post-toc-number">1.2.1.</span> <span class="post-toc-text">2.1 导入jar包</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2-2-添加资源到工程中"><span class="post-toc-number">1.2.2.</span> <span class="post-toc-text">2.2 添加资源到工程中</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-修改原生工程的Androidmanifest-xml文件"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">3. 修改原生工程的Androidmanifest.xml文件</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#3-1-修改application节点"><span class="post-toc-number">1.3.1.</span> <span class="post-toc-text">3.1 修改application节点</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#3-2-添加文件支持的屏幕旋转方向"><span class="post-toc-number">1.3.2.</span> <span class="post-toc-text">3.2 添加文件支持的屏幕旋转方向</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#3-3-添加最低支持系统版本"><span class="post-toc-number">1.3.3.</span> <span class="post-toc-text">3.3 添加最低支持系统版本</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#3-4-添加5-SDK必需引用的系统权限"><span class="post-toc-number">1.3.4.</span> <span class="post-toc-text">3.4 添加5+SDK必需引用的系统权限</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#3-5-添加Mob必须的系统权限"><span class="post-toc-number">1.3.5.</span> <span class="post-toc-text">3.5 添加Mob必须的系统权限</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#3-6-贴出整个Androidmanifest-xml文件"><span class="post-toc-number">1.3.6.</span> <span class="post-toc-text">3.6 贴出整个Androidmanifest.xml文件</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#4-修改工程源码"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">4. 修改工程源码</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#4-1-EntryActivity"><span class="post-toc-number">1.4.1.</span> <span class="post-toc-text">4.1 EntryActivity</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#4-2-在java目录下添加io-dcloud包"><span class="post-toc-number">1.4.2.</span> <span class="post-toc-text">4.2 在java目录下添加io.dcloud包</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#4-3-拷贝SDK-src-io-dcloud-Rinfomation-java文件到工程的io-dcloud包下"><span class="post-toc-number">1.4.3.</span> <span class="post-toc-text">4.3 拷贝SDK\src\io\dcloud\Rinfomation.java文件到工程的io.dcloud包下</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#5-添加Web应用资源到工程"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">5. 添加Web应用资源到工程</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#6-插件开发"><span class="post-toc-number">1.6.</span> <span class="post-toc-text">6. 插件开发</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#7-编写插件JS-API-amp-amp-调用JS-API"><span class="post-toc-number">1.7.</span> <span class="post-toc-text">7. 编写插件JS API && 调用JS API</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#7-1-编写API"><span class="post-toc-number">1.7.1.</span> <span class="post-toc-text">7.1 编写API</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#7-2-页面调用"><span class="post-toc-number">1.7.2.</span> <span class="post-toc-text">7.2 页面调用</span></a></li></ol></li></ol></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-使用Android Studio开发MUI插件入坑指南"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title"></h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017-08-11 18:15:43" datetime="2017-08-11T10:15:43.597Z"  itemprop="datePublished">2017-08-11</time>
+
+            
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h2 id="使用Android-Studio开发MUI插件入坑指南"><a href="#使用Android-Studio开发MUI插件入坑指南" class="headerlink" title="使用Android Studio开发MUI插件入坑指南"></a>使用Android Studio开发MUI插件入坑指南</h2><p>[TOC]</p>
 <p><strong>写在前面，该入坑指南是以<code>Mob</code>发送短信验证码为例，实现MUI第三方插件的开发，仅供参考。</strong></p>
 <figure class="image-bubble">
                 <div class="img-lightbox">
@@ -84,117 +239,307 @@
 <h3 id="6-插件开发"><a href="#6-插件开发" class="headerlink" title="6. 插件开发"></a>6. 插件开发</h3><p>这里以发送短信验证码为例，创建<code>SendMsg.java</code><br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> io.watasi;</div><div class="line"></div><div class="line"><span class="keyword">import</span> android.content.Context;</div><div class="line"><span class="keyword">import</span> android.os.Bundle;</div><div class="line"><span class="keyword">import</span> android.util.Log;</div><div class="line"></div><div class="line"><span class="keyword">import</span> org.json.JSONArray;</div><div class="line"></div><div class="line"><span class="keyword">import</span> cn.smssdk.EventHandler;</div><div class="line"><span class="keyword">import</span> cn.smssdk.OnSendMessageHandler;</div><div class="line"><span class="keyword">import</span> cn.smssdk.SMSSDK;</div><div class="line"><span class="keyword">import</span> io.dcloud.common.DHInterface.IWebview;</div><div class="line"><span class="keyword">import</span> io.dcloud.common.DHInterface.StandardFeature;</div><div class="line"><span class="keyword">import</span> io.dcloud.common.util.JSUtil;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SendMsg</span> <span class="keyword">extends</span> <span class="title">StandardFeature</span> </span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onStart</span><span class="params">(Context pContext, Bundle pSavedInstanceState, String[] pRuntimeArgs)</span> </span>&#123;</div><div class="line">        initSDK();</div><div class="line">    &#125;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">initSDK</span><span class="params">()</span> </span>&#123;</div><div class="line">        <span class="comment">// 创建EventHandler对象</span></div><div class="line">        EventHandler eventHandler = <span class="keyword">new</span> EventHandler() &#123;</div><div class="line">            <span class="meta">@Override</span></div><div class="line">            <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">afterEvent</span><span class="params">(<span class="keyword">int</span> event, <span class="keyword">int</span> result, Object data)</span> </span>&#123;</div><div class="line">                <span class="keyword">if</span> (result == SMSSDK.RESULT_COMPLETE) &#123;</div><div class="line">                    <span class="comment">//回调完成</span></div><div class="line">                    <span class="keyword">if</span> (event == SMSSDK.EVENT_SUBMIT_VERIFICATION_CODE) &#123;</div><div class="line">                        <span class="comment">//提交验证码成功</span></div><div class="line">                    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (event == SMSSDK.EVENT_GET_VERIFICATION_CODE) &#123;</div><div class="line">                        <span class="comment">//获取验证码成功</span></div><div class="line">                    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (event == SMSSDK.EVENT_GET_SUPPORTED_COUNTRIES) &#123;</div><div class="line">                        <span class="comment">//返回支持发送验证码的国家列表</span></div><div class="line">                    &#125;</div><div class="line">                &#125; <span class="keyword">else</span> &#123;</div><div class="line">                    ((Throwable) data).printStackTrace();</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;;</div><div class="line">        <span class="comment">// 注册监听器</span></div><div class="line">        SMSSDK.registerEventHandler(eventHandler);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">send</span><span class="params">(<span class="keyword">final</span> IWebview pWebview, JSONArray array)</span></span>&#123;</div><div class="line">        <span class="keyword">final</span> String CallBackID = array.optString(<span class="number">0</span>);</div><div class="line">        String tel = array.optString(<span class="number">1</span>);</div><div class="line">        </div><div class="line">        SMSSDK.getVerificationCode(<span class="string">"86"</span>, tel, <span class="keyword">new</span> OnSendMessageHandler() &#123;</div><div class="line">            <span class="meta">@Override</span></div><div class="line">            <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">onSendMessage</span><span class="params">(String s, String s1)</span> </span>&#123;</div><div class="line">                JSUtil.execCallback(pWebview, CallBackID, <span class="string">"登录成功"</span>, JSUtil.OK, <span class="keyword">false</span>);</div><div class="line">                <span class="keyword">return</span> <span class="keyword">false</span>;</div><div class="line">            &#125;</div><div class="line">        &#125;);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <p><strong><code>注意：</code></strong>插件编写完成后，一定要在<code>assets/data/dcloud_properties.xml</code>文件中声明插件类别名和Native层扩展插件类的对应关系<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">&lt;properties&gt;</div><div class="line">	&lt;features&gt;</div><div class="line">		&lt;!--name为类名， value为类所在的路径--&gt;</div><div class="line">		&lt;feature name=&quot;SendMsg&quot; value=&quot;io.watasi.SendMsg&quot; /&gt;</div><div class="line">	&lt;/features&gt;	</div><div class="line"></div><div class="line">	&lt;services&gt;</div><div class="line">		&lt;service name=&quot;push&quot; value=&quot;io.dcloud.feature.aps.APSFeatureImpl&quot;/&gt;</div><div class="line">		&lt;service name=&quot;Statistic&quot; value=&quot;io.dcloud.feature.statistics.StatisticsBootImpl&quot;/&gt;</div><div class="line">		&lt;service name=&quot;Downloader&quot; value=&quot;io.dcloud.net.DownloaderBootImpl&quot;/&gt;</div><div class="line">	&lt;/services&gt;</div><div class="line">&lt;/properties&gt;</div></pre></td></tr></table></figure></p>
 <h3 id="7-编写插件JS-API-amp-amp-调用JS-API"><a href="#7-编写插件JS-API-amp-amp-调用JS-API" class="headerlink" title="7. 编写插件JS API &amp;&amp; 调用JS API"></a>7. 编写插件JS API &amp;&amp; 调用JS API</h3><h4 id="7-1-编写API"><a href="#7-1-编写API" class="headerlink" title="7.1 编写API"></a>7.1 编写API</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">document</span>.addEventListener(<span class="string">"plusready"</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="comment">// 声明的JS“扩展插件别名”</span></div><div class="line">    <span class="keyword">var</span> _BARCODE = <span class="string">'SendMsg'</span>,    <span class="comment">// 与dcloud_properties.xml中声明插件类别名相同</span></div><div class="line">        B = <span class="built_in">window</span>.plus.bridge;</div><div class="line"></div><div class="line">    <span class="built_in">window</span>.plus.sendMsg = &#123;</div><div class="line">        send: <span class="function"><span class="keyword">function</span>(<span class="params">phone, successCallback, errorCallback</span>) </span>&#123;</div><div class="line">            <span class="keyword">var</span> success = <span class="keyword">typeof</span> successCallback !== <span class="string">'function'</span> ? <span class="literal">null</span> : <span class="function"><span class="keyword">function</span>(<span class="params">args</span>) </span>&#123;</div><div class="line">                successCallback(args);</div><div class="line">            &#125;;</div><div class="line">            <span class="keyword">var</span> fail = <span class="keyword">typeof</span> errorCallback !== <span class="string">'function'</span> ? <span class="literal">null</span> : <span class="function"><span class="keyword">function</span>(<span class="params">code</span>) </span>&#123;</div><div class="line">                errorCallback(code);</div><div class="line">            &#125;;</div><div class="line">            callbackID = B.callbackId(success, fail);</div><div class="line">            </div><div class="line">            <span class="comment">// 第二个参数与原生android实现的方法名相同</span></div><div class="line">            <span class="keyword">return</span> B.exec(_BARCODE, <span class="string">"send"</span>, [callbackID, phone]);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;, <span class="literal">true</span>);</div></pre></td></tr></table></figure>
-<h4 id="7-2-页面调用"><a href="#7-2-页面调用" class="headerlink" title="7.2 页面调用"></a>7.2 页面调用</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"</span> /&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">"css/mui.min.css"</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="undefined">    	.mt20&#123;margin-top: 20px;&#125;</span></div><div class="line"><span class="undefined">    	.btn-wrapper&#123;padding: 0 15px;&#125;</span></div><div class="line"><span class="undefined">    	.btn-wrapper button &#123;padding: 10px 0;&#125;</span></div><div class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">header</span> <span class="attr">class</span>=<span class="string">"mui-bar mui-bar-nav"</span>&gt;</span></div><div class="line">	    <span class="tag">&lt;<span class="name">h1</span> <span class="attr">class</span>=<span class="string">"mui-title"</span>&gt;</span>登录<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">header</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"mui-content"</span>&gt;</span></div><div class="line">	    <span class="tag">&lt;<span class="name">form</span> <span class="attr">class</span>=<span class="string">"mui-input-group mt20"</span>&gt;</span></div><div class="line">	        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"mui-input-row"</span>&gt;</span></div><div class="line">	            <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"tel"</span> <span class="attr">class</span>=<span class="string">"phone"</span> <span class="attr">class</span>=<span class="string">"mui-input-clear"</span> <span class="attr">placeholder</span>=<span class="string">"请输入手机号"</span>&gt;</span></div><div class="line">	        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">	        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"mui-input-row"</span>&gt;</span></div><div class="line">	            <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"number"</span> <span class="attr">class</span>=<span class="string">"code"</span> <span class="attr">class</span>=<span class="string">"mui-input-clear"</span> <span class="attr">placeholder</span>=<span class="string">"验证码"</span>&gt;</span></div><div class="line">	        <span class="tag">&lt;/<span class="name">div</span>&gt;</span>	        </div><div class="line">	    <span class="tag">&lt;/<span class="name">form</span>&gt;</span></div><div class="line">	    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"btn-wrapper"</span>&gt;</span></div><div class="line">	    	<span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">"sendCode"</span> <span class="attr">class</span>=<span class="string">"mui-btn mui-btn-block mui-btn-primary mt20"</span>&gt;</span>发送验证码<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line">	    	<span class="tag">&lt;<span class="name">button</span> <span class="attr">class</span>=<span class="string">"mui-btn mui-btn-block mui-btn-danger"</span>&gt;</span>登录<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line">	    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">	</div><div class="line">	<span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"js/mui.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"plugs/sendMsg.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="undefined">		mui.init();</span></div><div class="line"><span class="javascript">		<span class="built_in">document</span>.querySelector(<span class="string">"#sendCode"</span>).addEventListener(<span class="string">"tap"</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></div><div class="line"><span class="javascript">			<span class="keyword">var</span> phone = <span class="built_in">document</span>.querySelector(<span class="string">".phone"</span>).value;</span></div><div class="line"><span class="javascript">			plus.sendMsg.send(phone, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;) ;</span></div><div class="line"><span class="javascript">		&#125;, <span class="literal">false</span>);</span></div><div class="line"><span class="undefined">	</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>]]></content>
+<h4 id="7-2-页面调用"><a href="#7-2-页面调用" class="headerlink" title="7.2 页面调用"></a>7.2 页面调用</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"</span> /&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">"css/mui.min.css"</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="undefined">    	.mt20&#123;margin-top: 20px;&#125;</span></div><div class="line"><span class="undefined">    	.btn-wrapper&#123;padding: 0 15px;&#125;</span></div><div class="line"><span class="undefined">    	.btn-wrapper button &#123;padding: 10px 0;&#125;</span></div><div class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">header</span> <span class="attr">class</span>=<span class="string">"mui-bar mui-bar-nav"</span>&gt;</span></div><div class="line">	    <span class="tag">&lt;<span class="name">h1</span> <span class="attr">class</span>=<span class="string">"mui-title"</span>&gt;</span>登录<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">header</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"mui-content"</span>&gt;</span></div><div class="line">	    <span class="tag">&lt;<span class="name">form</span> <span class="attr">class</span>=<span class="string">"mui-input-group mt20"</span>&gt;</span></div><div class="line">	        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"mui-input-row"</span>&gt;</span></div><div class="line">	            <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"tel"</span> <span class="attr">class</span>=<span class="string">"phone"</span> <span class="attr">class</span>=<span class="string">"mui-input-clear"</span> <span class="attr">placeholder</span>=<span class="string">"请输入手机号"</span>&gt;</span></div><div class="line">	        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">	        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"mui-input-row"</span>&gt;</span></div><div class="line">	            <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"number"</span> <span class="attr">class</span>=<span class="string">"code"</span> <span class="attr">class</span>=<span class="string">"mui-input-clear"</span> <span class="attr">placeholder</span>=<span class="string">"验证码"</span>&gt;</span></div><div class="line">	        <span class="tag">&lt;/<span class="name">div</span>&gt;</span>	        </div><div class="line">	    <span class="tag">&lt;/<span class="name">form</span>&gt;</span></div><div class="line">	    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"btn-wrapper"</span>&gt;</span></div><div class="line">	    	<span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">"sendCode"</span> <span class="attr">class</span>=<span class="string">"mui-btn mui-btn-block mui-btn-primary mt20"</span>&gt;</span>发送验证码<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line">	    	<span class="tag">&lt;<span class="name">button</span> <span class="attr">class</span>=<span class="string">"mui-btn mui-btn-block mui-btn-danger"</span>&gt;</span>登录<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line">	    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">	</div><div class="line">	<span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"js/mui.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"plugs/sendMsg.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="undefined">		mui.init();</span></div><div class="line"><span class="javascript">		<span class="built_in">document</span>.querySelector(<span class="string">"#sendCode"</span>).addEventListener(<span class="string">"tap"</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></div><div class="line"><span class="javascript">			<span class="keyword">var</span> phone = <span class="built_in">document</span>.querySelector(<span class="string">".phone"</span>).value;</span></div><div class="line"><span class="javascript">			plus.sendMsg.send(phone, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;) ;</span></div><div class="line"><span class="javascript">		&#125;, <span class="literal">false</span>);</span></div><div class="line"><span class="undefined">	</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2017-08-11T10:15:08.000Z" itemprop="dateUpdated">2017-08-11 18:15:08</time>
+</span><br>
+
+
+        
+        watasi，男，18岁，未婚，爱好《蜡笔小新》
+        
+    </div>
+    <footer>
+        <a href="http://watasi.cn">
+            <img src="/img/avatar.jpg" alt="わタし">
+            わタし
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+
+            
+<div class="page-share-wrap">
     
-    <summary type="html">
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://watasi.cn/2017/08/11/使用Android Studio开发MUI插件入坑指南/&title=わタしの ブログ&pic=http://watasi.cn/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://watasi.cn/2017/08/11/使用Android Studio开发MUI插件入坑指南/&title=わタしの ブログ&source=个人博客" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://watasi.cn/2017/08/11/使用Android Studio开发MUI插件入坑指南/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=わタしの ブログ&url=http://watasi.cn/2017/08/11/使用Android Studio开发MUI插件入坑指南/&via=http://watasi.cn" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://watasi.cn/2017/08/11/使用Android Studio开发MUI插件入坑指南/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
     
-      &lt;h2 id=&quot;使用Android-Studio开发MUI插件入坑指南&quot;&gt;&lt;a href=&quot;#使用Android-Studio开发MUI插件入坑指南&quot; class=&quot;headerlink&quot; title=&quot;使用Android Studio开发MUI插件入坑指南&quot;&gt;&lt;/a&gt;使用And
-    
-    </summary>
-    
-    
-  </entry>
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
   
-  <entry>
-    <title>基于MUI开发的一套模板</title>
-    <link href="http://watasi.cn/2017/08/01/%E5%9F%BA%E4%BA%8EMUI%E5%BC%80%E5%8F%91%E7%9A%84%E4%B8%80%E5%A5%97%E6%A8%A1%E6%9D%BF/"/>
-    <id>http://watasi.cn/2017/08/01/基于MUI开发的一套模板/</id>
-    <published>2017-08-01T00:28:18.781Z</published>
-    <updated>2017-08-01T00:52:17.451Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>公司准备用MUI框架，开发一套模板，方便于未来进行二次、三次开发。本人本着绝对服从领导指示的原则，参与了模板的开发，这里把项目开源一下。<br>该项目目前功能不是很完善(至少提交App Store被批为<code>无用的爱啪啪</code>)，后续会添加更多的功能。<br><a href="https://github.com/Jessom/MUI" target="_blank" rel="external">戳这里</a>查看项目源码。</p>
-<h2 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">|-default                 页面资源</div><div class="line">  |-css                   样式表</div><div class="line">    |-css                 sass编译后的css</div><div class="line">    |-sass                sass源码</div><div class="line">  |-iconfont              字体图标</div><div class="line">  |-images                图片资源</div><div class="line">  |-js                    页面js文件</div><div class="line">|-Public                  公共资源</div><div class="line">  |-css                   公共css</div><div class="line">  |-images                公共图片资源</div><div class="line">  |-js                    公共js文件</div><div class="line">  |-plugins               插件</div><div class="line">|-.project                HBuilder编辑器生成文件</div><div class="line">|-manifest.json           app配置文件</div><div class="line">|-abotut.html             关于我们</div><div class="line">|-detail.html             详情</div><div class="line">|-editor.html             编辑</div><div class="line">|-forget_password.html    找回密码</div><div class="line">|-home.html               主页</div><div class="line">|-index.html              入口</div><div class="line">|-login.html              登录</div><div class="line">|-personal.html           个人</div><div class="line">|-preview.html            预览</div><div class="line">|-publish.html            发布选项</div><div class="line">|-reg.html                注册</div><div class="line">|-release.html            发布</div><div class="line">|-setting.html            设置</div><div class="line">|-userinfo.html           个人信息</div></pre></td></tr></table></figure>
-<h2 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h2><ol>
-<li>主要用到的就是MUI</li>
-<li>数据渲染的部分使用了vue1.0.28</li>
-</ol>
-<h2 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h2><p>[x] 注册<br>[x] 登录<br>[x] 发布文章<br>[x] 浏览文章</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;项目介绍&quot;&gt;&lt;a href=&quot;#项目介绍&quot; class=&quot;headerlink&quot; title=&quot;项目介绍&quot;&gt;&lt;/a&gt;项目介绍&lt;/h2&gt;&lt;p&gt;公司准备用MUI框架，开发一套模板，方便于未来进行二次、三次开发。本人本着绝对服从领导指示的原则，参与了模板的开发，这里把项
-    
-    </summary>
-    
-      <category term="mui" scheme="http://watasi.cn/categories/mui/"/>
-    
-    
-  </entry>
+
   
-  <entry>
-    <title>iis7托管nodejs应用程序</title>
-    <link href="http://watasi.cn/2017/07/29/iis7%E6%89%98%E7%AE%A1nodejs%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F/"/>
-    <id>http://watasi.cn/2017/07/29/iis7托管nodejs应用程序/</id>
-    <published>2017-07-29T06:36:22.229Z</published>
-    <updated>2017-07-31T00:43:13.541Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="1-参考资料"><a href="#1-参考资料" class="headerlink" title="1. 参考资料"></a>1. 参考资料</h1><p><a href="http://www.jb51.net/article/61569.htm" target="_blank" rel="external">http://www.jb51.net/article/61569.htm</a><br><a href="http://www.cnblogs.com/chenweixuan/p/5489343.html" target="_blank" rel="external">http://www.cnblogs.com/chenweixuan/p/5489343.html</a></p>
-<h1 id="2-开始"><a href="#2-开始" class="headerlink" title="2. 开始"></a>2. 开始</h1><p><a href="https://nodejs.org/en/download/" target="_blank" rel="external">NodeJs</a><br><a href="https://www.iis.net/downloads/microsoft/url-rewrite" target="_blank" rel="external">URL Rewrite</a><br><a href="https://github.com/tjanczuk/iisnode" target="_blank" rel="external">iisnode</a><br><a href="https://github.com/azure/iisnode/releases/download/v0.2.21/iisnode-full-v0.2.21-x86.msi" target="_blank" rel="external">iisnode x86下载</a><br><a href="https://github.com/azure/iisnode/releases/download/v0.2.21/iisnode-full-v0.2.21-x64.msi" target="_blank" rel="external">iisnode x64下载</a></p>
-<p>安装完成后，在IIS中创建站点，指向nodejs应用程序目录(这里以express项目为例)，<code>在nodejs应用程序中添加web.config文件</code>：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">&lt;configuration&gt;</div><div class="line">    &lt;system.webServer&gt;</div><div class="line">        &lt;handlers&gt;</div><div class="line">            &lt;add name=&quot;iisnode&quot; path=&quot;start.js&quot; verb=&quot;*&quot; modules=&quot;iisnode&quot; resourceType=&quot;Unspecified&quot; requireAccess=&quot;Script&quot; /&gt;</div><div class="line">        &lt;/handlers&gt;</div><div class="line">        &lt;rewrite&gt;</div><div class="line">            &lt;rules&gt;</div><div class="line">                &lt;rule name=&quot;all&quot;&gt;</div><div class="line">                    &lt;match url=&quot;/*&quot; /&gt;</div><div class="line">                    &lt;action type=&quot;Rewrite&quot; url=&quot;start.js&quot; /&gt;</div><div class="line">                &lt;/rule&gt;</div><div class="line">            &lt;/rules&gt;</div><div class="line">        &lt;/rewrite&gt;</div><div class="line">    &lt;/system.webServer&gt;</div><div class="line">&lt;/configuration&gt;</div></pre></td></tr></table></figure>
-<p><strong>注意：</strong> <add name="iisnode" `path="start.js" `="" verb="*" modules="iisnode" resourcetype="Unspecified" requireaccess="Script">及<action type="Rewrite" `url="start.js" `=""></action></add></p>
-<p>start.js文件</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">#!/usr/bin/env node</div><div class="line">require(&apos;./bin/www&apos;);</div></pre></td></tr></table></figure>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;1-参考资料&quot;&gt;&lt;a href=&quot;#1-参考资料&quot; class=&quot;headerlink&quot; title=&quot;1. 参考资料&quot;&gt;&lt;/a&gt;1. 参考资料&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;http://www.jb51.net/article/61569.htm&quot; targ
-    
-    </summary>
-    
-    
-      <category term="nodejs" scheme="http://watasi.cn/tags/nodejs/"/>
-    
-      <category term="iis" scheme="http://watasi.cn/tags/iis/"/>
-    
-  </entry>
+    <div class="waves-block waves-effect next">
+      <a href="/2017/08/01/基于MUI开发的一套模板/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">基于MUI开发的一套模板</h4>
+      </a>
+    </div>
   
-  <entry>
-    <title>mui监测IOS版本更新</title>
-    <link href="http://watasi.cn/2017/07/29/mui%E7%9B%91%E6%B5%8BIOS%E7%89%88%E6%9C%AC%E6%9B%B4%E6%96%B0/"/>
-    <id>http://watasi.cn/2017/07/29/mui监测IOS版本更新/</id>
-    <published>2017-07-29T05:57:23.316Z</published>
-    <updated>2017-07-29T05:59:24.499Z</updated>
+</nav>
+
+
+
     
-    <content type="html"><![CDATA[<p>使用<code>mui</code>开发混合app，上架app stroe后，监测app store是否有更新，并提示用户跳转app store更新应用。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> ver;    <span class="comment">// 用于保存当前应用版本</span></div><div class="line"></div><div class="line">mui.plusReady(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;         </div><div class="line">     plus.runtime.getProperty(plus.runtime.appid, <span class="function"><span class="keyword">function</span>(<span class="params">inf</span>) </span>&#123;</div><div class="line">         ver = inf.version;        <span class="comment">// 当前应用版本</span></div><div class="line">         <span class="keyword">var</span> ua = navigator.userAgent.toLowerCase();</div><div class="line">         <span class="keyword">if</span>(<span class="regexp">/iphone|ipad|ipod/</span>.test(ua)) &#123;    <span class="comment">// iphone</span></div><div class="line">             mui.ajax(&#123;</div><div class="line">                 url: <span class="string">'http://itunes.apple.com/lookup?id=1166765111'</span>,</div><div class="line">                 type: <span class="string">"GET"</span>,</div><div class="line">                 dataType: <span class="string">"json"</span>,</div><div class="line">                 data: &#123;</div><div class="line">                     id: <span class="number">1166765111</span></div><div class="line">                 &#125;,</div><div class="line">                 contentType:<span class="string">'application/x-www-form-urlencoded;charset=UTF-8'</span>,</div><div class="line">                 success: <span class="function"><span class="keyword">function</span>(<span class="params">res</span>)</span>&#123;</div><div class="line">                     <span class="comment">//console.log(JSON.stringify(res));</span></div><div class="line">                     <span class="keyword">var</span> version = res.results[<span class="number">0</span>].version;</div><div class="line">                     <span class="keyword">if</span>(version &gt; ver) &#123;</div><div class="line">                         mui.alert(res.results[<span class="number">0</span>].releaseNotes, <span class="string">"版本更新"</span>, <span class="string">"确定"</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">                             <span class="keyword">var</span> url = <span class="string">'itms-apps://itunes.apple.com/us/app/id1166765111'</span>;</div><div class="line">                             plus.runtime.openURL(url);</div><div class="line">                         &#125;)</div><div class="line">                     &#125;</div><div class="line">                 &#125;</div><div class="line">             &#125;)</div><div class="line">         &#125;</div><div class="line">    &#125;);</div><div class="line"></div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;使用&lt;code&gt;mui&lt;/code&gt;开发混合app，上架app stroe后，监测app store是否有更新，并提示用户跳转app store更新应用。&lt;br&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td clas
-    
-    </summary>
-    
-    
-      <category term="mui" scheme="http://watasi.cn/tags/mui/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Nodejs使用request以流的形式转发图片</title>
-    <link href="http://watasi.cn/2017/07/29/Nodejs%E4%BD%BF%E7%94%A8request%E4%BB%A5%E6%B5%81%E7%9A%84%E5%BD%A2%E5%BC%8F%E8%BD%AC%E5%8F%91%E5%9B%BE%E7%89%87/"/>
-    <id>http://watasi.cn/2017/07/29/Nodejs使用request以流的形式转发图片/</id>
-    <published>2017-07-29T02:55:12.404Z</published>
-    <updated>2017-07-29T05:51:26.283Z</updated>
-    
-    <content type="html"><![CDATA[<p>做项目的时候，需要用Nodejs做代理转发，服务器那边要求图片以<code>流</code>的方式上传，这里记录一下Nodejs以<code>流</code>的形式读取本地图片并上传。</p>
-<h2 id="1-安装依赖"><a href="#1-安装依赖" class="headerlink" title="1. 安装依赖"></a>1. 安装依赖</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install request md5</div></pre></td></tr></table></figure>
-<h2 id="2-需要模块"><a href="#2-需要模块" class="headerlink" title="2. 需要模块"></a>2. 需要模块</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> fs = <span class="built_in">require</span>(<span class="string">"fs"</span>);</div><div class="line"><span class="keyword">const</span> path = <span class="built_in">require</span>(<span class="string">"path"</span>);</div><div class="line"><span class="keyword">const</span> request = <span class="built_in">require</span>(<span class="string">"request"</span>);</div><div class="line"><span class="keyword">const</span> md5 = <span class="built_in">require</span>(<span class="string">"md5"</span>);</div></pre></td></tr></table></figure>
-<h2 id="3-具体操作"><a href="#3-具体操作" class="headerlink" title="3. 具体操作"></a>3. 具体操作</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 获取前台穿过来到图片base64信息</span></div><div class="line"><span class="keyword">let</span> img = req.body.img;</div><div class="line"></div><div class="line"><span class="comment">// 去掉base64头部</span></div><div class="line"><span class="keyword">let</span> base64Data = img.replace(<span class="regexp">/^data:image\/\w+;base64,/</span>, <span class="string">""</span>);</div><div class="line"></div><div class="line"><span class="comment">// 转换成二进制</span></div><div class="line"><span class="keyword">let</span> buffer = <span class="keyword">new</span> Buffer(base64Data, <span class="string">"base64"</span>);</div><div class="line"></div><div class="line"><span class="comment">// 生成图片md5值</span></div><div class="line"><span class="keyword">let</span> md5Data = md5(buffer);</div><div class="line"></div><div class="line"><span class="comment">// 保存图片</span></div><div class="line">fs.writeFile(path.join(__dirname+<span class="string">"/../uploads"</span>, <span class="string">`<span class="subst">$&#123;md5Data&#125;</span>.jpg`</span>), buffer, (err) =&gt; &#123;</div><div class="line">	<span class="keyword">if</span>(err) &#123;</div><div class="line">		<span class="built_in">console</span>.log(err);</div><div class="line">		<span class="keyword">return</span>;</div><div class="line">   &#125;</div><div class="line"></div><div class="line">   <span class="comment">// 读取图片</span></div><div class="line">   fs.createReadStream(path.join(__dirname+<span class="string">`/../uploads/<span class="subst">$&#123;md5Data&#125;</span>.jpg`</span>)).pipe(request(&#123;</div><div class="line">		url: url,</div><div class="line">      method: <span class="string">"POST"</span>,</div><div class="line">      headers: &#123; <span class="string">"Content-Type"</span>: <span class="string">"application/json"</span> &#125;</div><div class="line">      ...</div><div class="line">   &#125;, (error, response, body) =&gt; &#123;</div><div class="line">		<span class="built_in">console</span>.log(body);</div><div class="line">   &#125;));</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;做项目的时候，需要用Nodejs做代理转发，服务器那边要求图片以&lt;code&gt;流&lt;/code&gt;的方式上传，这里记录一下Nodejs以&lt;code&gt;流&lt;/code&gt;的形式读取本地图片并上传。&lt;/p&gt;
-&lt;h2 id=&quot;1-安装依赖&quot;&gt;&lt;a href=&quot;#1-安装依赖&quot; class=
-    
-    </summary>
-    
-    
-      <category term="nodejs" scheme="http://watasi.cn/tags/nodejs/"/>
-    
-  </entry>
-  
-</feed>
+
+
+
+
+
+<section class="comments" id="comments">
+    <!-- UY BEGIN -->
+    <div id="uyan_frame"></div>
+    <script src="http://v2.uyan.cc/code/uyan.js?uid=2140201"></script>
+    <!-- UY END -->
+</section>
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢大爷~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <!-- <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div> -->
+    <div class="bottom">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+          <span>Welcome to <a href="http://watasi.cn">わタし</a></span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://watasi.cn/2017/08/11/使用Android Studio开发MUI插件入坑指南/&title=《No title》 — わタしの ブログ&pic=http://watasi.cn/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://watasi.cn/2017/08/11/使用Android Studio开发MUI插件入坑指南/&title=《No title》 — わタしの ブログ&source=个人博客" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://watasi.cn/2017/08/11/使用Android Studio开发MUI插件入坑指南/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《No title》 — わタしの ブログ&url=http://watasi.cn/2017/08/11/使用Android Studio开发MUI插件入坑指南/&via=http://watasi.cn" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://watasi.cn/2017/08/11/使用Android Studio开发MUI插件入坑指南/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://watasi.cn/2017/08/11/使用Android Studio开发MUI插件入坑指南/" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+lazyScripts.push('//s95.cnzz.com/z_stat.php?id=1263142338&web_id=1263142338')
+
+</script>
+
+<script src="/js/main.min.js?v=1.6.11"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.6.11" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '死鬼快回来！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '亲爱的(づ｡◕ᴗᴗ◕｡)づ!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://watasi.cn/"/>
-  <updated>2017-08-11T10:15:08.000Z</updated>
+  <updated>2017-08-11T10:55:08.097Z</updated>
   <id>http://watasi.cn/</id>
   
   <author>
@@ -16,14 +16,13 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title>使用Android Studio开发MUI插件入坑指南</title>
     <link href="http://watasi.cn/2017/08/11/%E4%BD%BF%E7%94%A8Android%20Studio%E5%BC%80%E5%8F%91MUI%E6%8F%92%E4%BB%B6%E5%85%A5%E5%9D%91%E6%8C%87%E5%8D%97/"/>
     <id>http://watasi.cn/2017/08/11/使用Android Studio开发MUI插件入坑指南/</id>
     <published>2017-08-11T10:15:43.597Z</published>
-    <updated>2017-08-11T10:15:08.000Z</updated>
+    <updated>2017-08-11T10:55:08.097Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="使用Android-Studio开发MUI插件入坑指南"><a href="#使用Android-Studio开发MUI插件入坑指南" class="headerlink" title="使用Android Studio开发MUI插件入坑指南"></a>使用Android Studio开发MUI插件入坑指南</h2><p>[TOC]</p>
-<p><strong>写在前面，该入坑指南是以<code>Mob</code>发送短信验证码为例，实现MUI第三方插件的开发，仅供参考。</strong></p>
+    <content type="html"><![CDATA[<p><strong>写在前面，该入坑指南是以<code>Mob</code>发送短信验证码为例，实现MUI第三方插件的开发，仅供参考。</strong></p>
 <figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
@@ -88,10 +87,16 @@
     
     <summary type="html">
     
-      &lt;h2 id=&quot;使用Android-Studio开发MUI插件入坑指南&quot;&gt;&lt;a href=&quot;#使用Android-Studio开发MUI插件入坑指南&quot; class=&quot;headerlink&quot; title=&quot;使用Android Studio开发MUI插件入坑指南&quot;&gt;&lt;/a&gt;使用And
+      &lt;p&gt;&lt;strong&gt;写在前面，该入坑指南是以&lt;code&gt;Mob&lt;/code&gt;发送短信验证码为例，实现MUI第三方插件的开发，仅供参考。&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&quot;image-bubble&quot;&gt;
+                &lt;div class=&quot;
     
     </summary>
     
+    
+      <category term="nodejs" scheme="http://watasi.cn/tags/nodejs/"/>
+    
+      <category term="iis" scheme="http://watasi.cn/tags/iis/"/>
     
   </entry>
   
